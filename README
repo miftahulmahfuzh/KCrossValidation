@@ -1,0 +1,16 @@
+* PRE REQUIREMENT (Linux)
+- Install Weka & Add it`s jar location to your classpath
+
+* COMPILE
+- javac KCrossValidation.java
+
+* RUN
+- java -cp .:/usr/share/java/weka-3.6.10.jar KCrossValidation <filename> <validation_method>
+
+<filename> -> iris.arff (or whatever .arff you have)
+<validation_method> -> 
+    - 1 : 10 fold cross validation
+    - 2 : full training
+    - 3 : testing (filename must be different from training)
+
+nb : you have to make model from training (do validation_method 1 or 2), otherwise you can't test it (validation_method 3) 
